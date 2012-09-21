@@ -1,5 +1,11 @@
-#include <sys/types.h>
+/*
 
+	Copyright (c) 2012 Dimitar Popov
+	Distributed under The MIT license.	
+
+*/
+
+#include <sys/types.h>
 #include <dirent.h>
 #include <stdio.h>
 #include <stdlib.h>
