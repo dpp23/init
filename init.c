@@ -15,6 +15,7 @@ int main(int argc, char **argv, char **envp)
 {
    	char c = '\0';
    	char *tmp = (char *)malloc(sizeof(char) * 100);
+	printf("\n\nSimple linux shell\nCopyright (c) 2012 Dimitar Popov \nDistributed under The MIT license.\n\nCommands supported: cd, ls, vim\n\n");
    	printf("\n[psh] %s $", get_current_dir_name());
    	while (c != EOF)
 	{
