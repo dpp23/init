@@ -1,0 +1,26 @@
+  gcc   -static -L/usr/local/lib 	-o vim objects/buffer.o objects/blowfish.o objects/charset.o objects/diff.o objects/digraph.o objects/edit.o objects/eval.o objects/ex_cmds.o objects/ex_cmds2.o objects/ex_docmd.o objects/ex_eval.o objects/ex_getln.o objects/fileio.o objects/fold.o objects/getchar.o objects/hardcopy.o objects/hashtab.o  objects/if_cscope.o objects/if_xcmdsrv.o objects/main.o objects/mark.o objects/memfile.o objects/memline.o objects/menu.o objects/message.o objects/misc1.o objects/misc2.o objects/move.o objects/mbyte.o objects/normal.o objects/ops.o objects/option.o objects/os_unix.o objects/pathdef.o objects/popupmnu.o objects/quickfix.o objects/regexp.o objects/screen.o objects/search.o objects/sha256.o objects/spell.o objects/syntax.o  objects/tag.o objects/term.o objects/ui.o objects/undo.o objects/window.o           objects/netbeans.o  objects/version.o       -lm -lncurses -ldl          
+objects/os_unix.o: In function `mch_libcall':
+os_unix.c:(.text+0x1fbf): warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/misc1.o: In function `expand_env_esc':
+misc1.c:(.text+0x6fc0): warning: Using 'getpwnam' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/os_unix.o: In function `mch_get_uname':
+os_unix.c:(.text+0x256c): warning: Using 'getpwuid' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/netbeans.o: In function `netbeans_open':
+netbeans.c:(.text+0x2367): warning: Using 'gethostbyname' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+  gcc   -static -L/usr/local/lib 	-o vim objects/buffer.o objects/blowfish.o objects/charset.o objects/diff.o objects/digraph.o objects/edit.o objects/eval.o objects/ex_cmds.o objects/ex_cmds2.o objects/ex_docmd.o objects/ex_eval.o objects/ex_getln.o objects/fileio.o objects/fold.o objects/getchar.o objects/hardcopy.o objects/hashtab.o  objects/if_cscope.o objects/if_xcmdsrv.o objects/main.o objects/mark.o objects/memfile.o objects/memline.o objects/menu.o objects/message.o objects/misc1.o objects/misc2.o objects/move.o objects/mbyte.o objects/normal.o objects/ops.o objects/option.o objects/os_unix.o objects/pathdef.o objects/popupmnu.o objects/quickfix.o objects/regexp.o objects/screen.o objects/search.o objects/sha256.o objects/spell.o objects/syntax.o  objects/tag.o objects/term.o objects/ui.o objects/undo.o objects/window.o           objects/netbeans.o  objects/version.o       -lm -lncurses 
+objects/misc1.o: In function `expand_env_esc':
+misc1.c:(.text+0x6fc0): warning: Using 'getpwnam' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/os_unix.o: In function `mch_get_uname':
+os_unix.c:(.text+0x256c): warning: Using 'getpwuid' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/netbeans.o: In function `netbeans_open':
+netbeans.c:(.text+0x2367): warning: Using 'gethostbyname' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+objects/os_unix.o: In function `mch_libcall':
+os_unix.c:(.text+0x1fb2): undefined reference to `dlerror'
+os_unix.c:(.text+0x1fbf): undefined reference to `dlopen'
+os_unix.c:(.text+0x2008): undefined reference to `dlsym'
+os_unix.c:(.text+0x2010): undefined reference to `dlerror'
+os_unix.c:(.text+0x2072): undefined reference to `dlsym'
+os_unix.c:(.text+0x207a): undefined reference to `dlerror'
+os_unix.c:(.text+0x2128): undefined reference to `dlclose'
+os_unix.c:(.text+0x2141): undefined reference to `dlerror'
+collect2: ld returned 1 exit status

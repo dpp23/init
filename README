@@ -1,0 +1,15 @@
+Simple linux shell by Dimitar Popov (dpp23 at cam.ac.uk)
+
+Supports only:
+	cd
+	ls
+	running static binaries (vim and helloworld supplied) 
+
+To install run:
+	make
+
+A initramfs named test.cpio.gz will be put in /boot, you can than start your system from it.
+You can put any additional files you want in the image in init/tmp
+
+To clean:
+	make clean 
